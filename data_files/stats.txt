@@ -1,0 +1,1 @@
+{"tot_games_played": 0, "tot_games_won": 0, "win_percent": 0, "current_streak": 0, "max_streak": 0, "guess_distro": [0, 0, 0, 0, 0, 0], "word_tracker": 0}

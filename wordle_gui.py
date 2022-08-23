@@ -445,7 +445,7 @@ def main():
             stats = json.load(f)
     # if no-file and/or invalid-json error: log error and re-init stats
     except (FileNotFoundError, json.decoder.JSONDecodeError) as error:
-        with open("data_files/dennis-wordle-error-log.txt", "a") as f:
+        with open("data_files/error-log.txt", "a") as f:
             date = datetime.now().strftime("%d-%b-%Y")
             f.write(f"{date}\nstats error: {str(error)}\n\n")
             stats = {
