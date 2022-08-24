@@ -72,6 +72,7 @@ def char_input_box(value, location):
         value,
         key=location,  # location: (row, column)
         font="Calibri 40",
+        text_color="white",
         size=(2, 1),
         border_width=1,
         disabled_readonly_background_color="#1a1a1a",
@@ -104,6 +105,7 @@ def keyboard_text_box(letter):
         text=letter,
         key=letter,
         font="Calibri 30",
+        text_color="white",
         size=(2, 1),
         border_width=0,
         background_color="gray",
@@ -363,27 +365,27 @@ def display_stats(stats, message):
 
     # create columns for layout
     first_column = [
-        [sg.Text(stats["tot_games_played"], font="Calibri 20")],
+        [sg.Text(stats["tot_games_played"], font="Calibri 20", text_color="white")],
         [sg.Text("Played", font="Calibri 16")],
     ]
 
     second_column = [
-        [sg.Text(stats["win_percent"], font="Calibri 20")],
+        [sg.Text(stats["win_percent"], font="Calibri 20", text_color="white")],
         [sg.Text("Win %", font="Calibri 16")],
     ]
 
     third_column = [
-        [sg.Text(stats["current_streak"], font="Calibri 20")],
+        [sg.Text(stats["current_streak"], font="Calibri 20", text_color="white")],
         [sg.Text("Current Streak", font="Calibri 16")],
     ]
 
     fourth_column = [
-        [sg.Text(stats["max_streak"], font="Calibri 20")],
+        [sg.Text(stats["max_streak"], font="Calibri 20", text_color="white")],
         [sg.Text("Max Streak", font="Calibri 16")],
     ]
 
     layout = [
-        [sg.Text(message, font="Calibri 20", pad=20)],
+        [sg.Text(message, font="Calibri 20", text_color="white", pad=20)],
         [
             sg.Column(first_column, element_justification="center"),
             sg.Column(second_column, element_justification="center"),
@@ -403,6 +405,8 @@ def display_stats(stats, message):
         element_justification="center",
         modal=True,
     )
+
+    window.move_to_center()
 
     draw_figure(window["-CANVAS-"].TKCanvas, create_bar_graph(stats))
 
@@ -514,6 +518,9 @@ def main():
         element_justification="center",
         background_color="#1a1a1a",
     )
+
+    window.move_to_center()
+
     [window[(0, col)].update(disabled=False) for col in range(0, 5)]
     window.bind("<BackSpace>", "-BACKSPACE-")
 
