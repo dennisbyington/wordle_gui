@@ -56,7 +56,7 @@ def char_input_box(value, location):
     """Creates a PySimpleGUI text input box
 
     Creates a PySimpleGUI text input box that with options that are ideal for a grid.
-    Uses grid locatoin tuple as key: (row, column))
+    Uses grid location tuple as key: (row, column))
 
     Args:
         value:
