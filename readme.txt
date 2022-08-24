@@ -1,3 +1,10 @@
+# Background
+
+This integrates much of the logic in my wordle_cli program and was done specficially to learn a GUI library.
+
+
+# ---------------------------------------------------------------------------
+
 # Description 
 
 GUI implementation of the Wordle game 
