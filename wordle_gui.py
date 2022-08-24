@@ -366,22 +366,22 @@ def display_stats(stats, message):
     # create columns for layout
     first_column = [
         [sg.Text(stats["tot_games_played"], font="Calibri 20", text_color="white")],
-        [sg.Text("Played", font="Calibri 16")],
+        [sg.Text("Played", font="Calibri 16", text_color="white")],
     ]
 
     second_column = [
         [sg.Text(stats["win_percent"], font="Calibri 20", text_color="white")],
-        [sg.Text("Win %", font="Calibri 16")],
+        [sg.Text("Win %", font="Calibri 16", text_color="white")],
     ]
 
     third_column = [
         [sg.Text(stats["current_streak"], font="Calibri 20", text_color="white")],
-        [sg.Text("Current Streak", font="Calibri 16")],
+        [sg.Text("Current Streak", font="Calibri 16", text_color="white")],
     ]
 
     fourth_column = [
         [sg.Text(stats["max_streak"], font="Calibri 20", text_color="white")],
-        [sg.Text("Max Streak", font="Calibri 16")],
+        [sg.Text("Max Streak", font="Calibri 16", text_color="white")],
     ]
 
     layout = [
