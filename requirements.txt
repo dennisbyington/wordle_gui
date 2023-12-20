@@ -1,2 +1,4 @@
 matplotlib==3.5.2
 PySimpleGUI==4.60.1
+
+# Also need to install python-tk.  Installation depends on your system.  https://tkdocs.com/tutorial/install.html

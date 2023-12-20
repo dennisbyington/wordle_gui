@@ -20,10 +20,11 @@ Additional information can be found here: https://en.wikipedia.org/wiki/Wordle
 # Dependencies
 
 - Python3 
+- python-tk.  Installation depends on your system.  https://tkdocs.com/tutorial/install.html
 - Imports: argparse, sys, json, datetime
 - External imports: matplotlib, PySimpleGUI
 
-* Install the external requirments via terminal: 'pip install -r requirements.txt'
+* Install the external requirements via terminal: 'pip install -r requirements.txt'
 
 
 # Help
