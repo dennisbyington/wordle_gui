@@ -1,6 +1,6 @@
 # Background
 
-This integrates much of the logic in my wordle_cli program and was done specficially to learn a GUI library.
+This integrates much of the logic in my wordle_cli program and was done specifically to learn a GUI library.
 
 
 # Description 
@@ -21,10 +21,7 @@ Additional information can be found here: https://en.wikipedia.org/wiki/Wordle
 
 - Python3 
 - python-tk.  Installation depends on your system.  https://tkdocs.com/tutorial/install.html
-- Imports: argparse, sys, json, datetime
-- External imports: matplotlib, PySimpleGUI
-
-* Install the external requirements via terminal: 'pip install -r requirements.txt'
+- Install the required libraries via 'pip install -r requirements.txt'
 
 
 # Help
@@ -62,4 +59,4 @@ This software is licensed under the MIT License.  See license.txt for details.
 
 # Acknowledgments
 
-This is my sofware recreation the web-based Wordle game.  Wordle was originally created by Josh Wardle and is now owned and published by the New York Times.  
+This is my software recreation the web-based Wordle game.  Wordle was originally created by Josh Wardle and is now owned and published by the New York Times.  
